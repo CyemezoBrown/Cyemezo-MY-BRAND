@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: poppins;
+	
+
+}
+body{
+	background-color: rgba(227, 221, 221, 0.7);
+}
+.wrapper{
+	justify-content: flex-start;
+	width: 100%;
+	position: absolute;
+}
+.wrapper .sidekick{
+
+	position: fixed;
+	height: 100%;
+	background: #fff;
+	padding: 0;
+}
+.wrapper .sidekick .intro h2{
+	left: 300px;
+	text-decoration-color: rgba(76, 140, 71, 1);
+}
+.wrapper .sidekick h1{
+	color: #58D68D;
+	text-transform: uppercase;
+	text-align: center;
+	
+}
+.wrapper .sidekick h2{
+	color: rgba(0, 0, 0, 1);
+	text-transform:lowercase;
+	text-align: center;
+}
+.wrapper .sidekick ul li{
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	border-top: 1px solid rgba(225,225,225,0.05);
+}
+.wrapper .sidekick ul li a{
+	
+}
+
+.wrapper .sidekick ul li a .fas{
+	width: 40px;
+}
+.wrapper .sidekick ul li a .far{
+	width: 40px;
+}
+.wrapper .sidekick ul li a .fab{
+	width: 40px;
+}
+.wrapper .sidekick ul li:hover{
+	background-color: #fff;
+}
+.wrapper .main {
+	left: 80%;
+}
+.wrapper .main .intro{
+	margin-left: 220px;
+	background: url(Breezy.jpeg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: auto;
+}
+.wrapper .main .intro h1{
+	position: absolute;
+    top: 15px;
+    left: 300px;
+	color: #5DADE2;
+	margin: 30px 100px 20px;
+
+}
+.wrapper .main .about {
+	background-color: rgba(227, 221, 221, 0.7);
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.wrapper .main .about h2{
+	background-size: 40px;
+	background-color: blue;
+	margin-left: 350px;
+	padding-top: 10px;
+}
+.wrapper .main .about p{
+	margin-left: 400px;
+}
+.wrapper .main .project {
+	background-color: rgba(227, 221, 221, 0.7);
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.wrapper .main .project h2{
+	background-size: 40px;
+	background-color: blue;
+	margin-left: 350px;
+	padding-top: 10px;
+}
+.wrapper .main .skills {
+	background-color: rgba(227, 221, 221, 0.7);
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.wrapper .main .skills h2{
+	background-size: 40px;
+	background-color: blue;
+	margin-left: 350px;
+	padding-top: 10px;
+}
+.wrapper .main .contact {
+	background-color: rgba(227, 221, 221, 0.7);
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.wrapper .main .contact h2{
+	background-size: 40px;
+	background-color: blue;
+	margin-left: 350px;
+	padding-top: 10px;
+}
+.wrapper .main .contact .image{
+    margin-left: 400px;
+    padding-top: 50px;
+}
+
+.form-container{
+	width: 500px;
+	height: auto;
+	padding: 25px 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 #010;
+	margin-left: 700px;
+	margin-top: -180px;
+}
+
+ul.list{
+	list-style-type: none;
+	text-align: center;	
+}
+ul.list li{
+	width: 400px;
+	margin-bottom: 10px;
+}
+
+ul.list li input{
+	background-color: #ddd;
+	color: #fff
+	width: 400px;
+	text-align: center;
+	padding: 3px 0px;
+	border:none;
+	border-radius: 5px;
+}
+
+ul.list li input[type="button"]{
+	background-color: #000;
+	color: #fff;
+	width: 100px;	
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="CB.css">
+	<script src="https://kit.fontawesome.com/ce20a13c2e.js" crossorigin="anonymous"></script>
+     <style type="text/css">
+     	
+     	nav ul li a{
+     		display: block;
+     		padding: 15px;
+
+     	}
+
+     	nav ul li a.active{
+
+     		background-color: #eee;
+     	}
+     	section{
+     		padding:25% 0;	
+     		}	
+     </style>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- start sidebar -->
+		<div class="sidekick">
+			<nav>
+			<ul><li> <a href="#Intro" class="intro-marker">
+			<h1 style="font-size:40px">
+				CYEMEZO <br>
+				Brown Fidele
+			</h1>
+			<h2 style="font-size: 20px">
+				Full stack developer
+			</h2></a></li>
+			<li><a href="#about" class="about-marker active"><i class="fas fa-user"></i>About</a></li>
+			<li><a href="#project" class="project-marker"><i class="fas fa-chart-bar"></i>Project</a></li>
+			<li><a href="#akills" class="skills-marker"><i class="far fa-lightbulb"></i>Skills</a></li>
+			<li><a href="#blog" class="blog-marker"><i class="fab fa-blogger-b"></i>Blog</a></li>
+			<li><a href="#contact" class="contact-marker"><i class="fas fa-phone-square-alt"></i>Contact</a></li>
+		    </ul>
+		    </nav>
+		</div>
+		<!-- end sidebar -->
+
+		<!-- Start Main content -->
+		<main class="main">
+			<!-- Start Intro section -->
+		<section class="intro">
+			<h1 style="font-size:30px">Believe in yourself turn <span style="background-color: #58D68D"> adversity into ambition,</span> Now <span style="text-decoration: underline; text-decoration-color: #58D68D"> blossom into wealth.</span></h1>
+		</section>
+		<!-- End Intro section -->
+
+
+		<!-- Start About section -->
+		<section class="about">
+			<h2 style="font-size:40px; color: white">ABOUT</h2><br><br>
+			<p style="font-size:28px">I am a full stack developer where I am learning  and developing my passion of become an expert programmer.<br><br>
+				As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at a high growth company.<br><br>
+             I am a quick learn in whatever am learning back in days I was dealing with Mathematics and Phyiscs.<br><br>
+            Current focus: <b>Portfolio</b>
+            </p>
+		</section>
+		<!-- End About section -->
+
+
+		<!-- Start Project section -->
+		<section class="project">
+			<h2 style="font-size:40px; color: white">PROJECT</h2>
+
+		</section>
+		<!-- End Project section -->
+
+
+		<!-- Start Skills section -->
+		<section class="skills">
+			<h2 style="font-size:40px; color: white">SKILLS</h2><br><br>
+
+		</section>
+		<!-- End Skills section -->
+
+		
+		<!-- Start Contact section -->
+		<section class="contact">
+			<h2 style="font-size:40px; color: white">CONTACT</h2><br><br>
+			<div class="image">
+				<a href=""><br><br></a>
+			</div>
+			<div class="image">
+				<a href=""><br><br></a>
+			</div>
+			<div class="form-container">
+		        <ul class="list">
+			        <li><p style="color: #000">Email:</p><input type="text" name="Email" placeholder="Email"></li><br>
+			        <li><p style="color: #000">Names:</p><input type="text" name="Names" placeholder="Names"></li><br>
+			        <li><p style="color: #000">Message :</p><input type="text" name="Message" placeholder="Message"></li><br>
+			        <li><input type="button" name="Send" value="Send"></li><br>
+		        </ul>
+	        </div>		
+		</section>
+		<!-- End Contact section -->
+		</main>
+		<!-- end of Main content-->
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+
+
+	(function() {
+		var navLinks = $('nav ul li a'),
+		   navH = $('nav').height(),
+		   section = $('section'),
+		   documentEl = $(document);
+
+		documentEl.on('scroll', function() {
+			var currentScrollPos = documentEl.scrollTop();
+
+			section.each(function(){
+				var self = $(this);
+				if (self.offset().top < (currentScrollPos + navH) && (currentScrollPos + navH) < (self.offset().top +self.outerHeight()) ) {
+					var targetClass = '.' + self.attr('class') + '-marker';
+					navLinks.removeClass('active');
+					$(targetClass).addClass('active');
+				}
+
+			})
+
+		});
+
+
+        })();
+        </script>
+</body>
+</html>
