@@ -62,12 +62,14 @@ body{
 	left: 80%;
 }
 .wrapper .main .intro{
+
 	margin-left: 220px;
 	background: url(Breezy.jpeg) no-repeat;
 	background-position: center;
 	background-size: cover;
 	height: auto;
 }
+
 .wrapper .main .intro h1{
 	position: absolute;
     top: 15px;
