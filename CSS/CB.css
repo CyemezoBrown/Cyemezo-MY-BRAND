@@ -58,7 +58,7 @@ body{
 .wrapper .main .intro{
 
 	margin-left: 220px;
-	background: url(/home/saint/Desktop/Website/Brown/Images/Breezy.jpeg) no-repeat;
+	background: url(/home/saint/Desktop/Brown/Photo/Fidele.jpeg);
 	background-position: center;
 	background-size: cover;
 	height: auto;
@@ -148,20 +148,22 @@ body{
 	text-align: center;
 }
 @media(max-width: 1024px){
-	.project_container .card_item{
+	.project_container .card_item; .cards{
  	width: 50%;
  }
 }
 @media(max-width: 768px){
-	.project_container .card_item{
+	.project_container .card_item; .cards{
  	width: 50%;
  }
 }
 @media(max-width: 528px){
-	.project_container .card_item{
+	.project_container .card_item; .cards{
  	width: 100%;
  }
-}
+}        
+         /* End project */
+        /* starts Skills */
 .wrapper .main .skills {
 	background-color: rgba(227, 221, 221, 0.7);
 	padding-top: 0px;
@@ -173,6 +175,55 @@ body{
 	margin-left: 350px;
 	padding-top: 10px;
 }
+.cards{
+    margin: 40px 0;
+    width: 70%;
+    margin-left: 450px;
+ }
+.cards .card_wrap{
+    width: 80%;
+    box-shadow: 0 0 10px 0 #000;
+    margin: 40px 10px;
+    background: #fff;
+ }
+
+ .cards .card_wrap .card_top p{
+    font-weight: 600px;
+    font-size: 70px;
+    text-align: center;
+ }
+ .cards_wrap .card_top{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 10px;
+ }
+div.item {
+    padding-top: 15px;
+    margin-left: 120px;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+img {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+.caption {
+    font-weight: 100px;
+    font-size: 20px;
+    display: block;
+}
+div.item3{
+    padding-top: 15px;
+    margin-left: 60px;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+   /* End skills */
+   /* Start Contact */
 .wrapper .main .contact {
 	background-color: rgba(227, 221, 221, 0.7);
 	padding-top: 0px;
@@ -233,3 +284,4 @@ ul.list li input[type="button"]{
 	color: #fff;
 	width: 80px;	
 }
+    /* End contact */
