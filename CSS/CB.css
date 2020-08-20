@@ -1,0 +1,287 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: poppins;
+	
+
+}
+body{
+	background-color: rgba(227, 221, 221, 0.7);
+}
+.wrapper{
+	justify-content: flex-start;
+	width: 100%;
+	position: absolute;
+}
+.wrapper .sidekick{
+
+	position: fixed;
+	height: 100%;
+	background: #fff;
+	padding: 0;
+}
+.wrapper .sidekick .intro h2{
+	left: 300px;
+	text-decoration-color: rgba(76, 140, 71, 1);
+}
+.wrapper .sidekick h1{
+	color: #58D68D;
+	text-transform: uppercase;
+	text-align: center;
+	
+}
+.wrapper .sidekick h2{
+	color: rgba(0, 0, 0, 1);
+	text-transform:lowercase;
+	text-align: center;
+}
+.wrapper .sidekick ul li{
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	border-top: 1px solid rgba(225,225,225,0.05);
+}
+.wrapper .sidekick ul li a .fas{
+	width: 40px;
+}
+.wrapper .sidekick ul li a .far{
+	width: 40px;
+}
+.wrapper .sidekick ul li a .fab{
+	width: 40px;
+}
+.wrapper .sidekick ul li:hover{
+	background-color: #fff;
+}
+}
+.wrapper .main .intro{
+
+	margin-left: 220px;
+	background: url(/home/saint/Desktop/Brown/Photo/Fidele.jpeg);
+	background-position: center;
+	background-size: cover;
+	height: auto;
+}
+
+.wrapper .main .intro h1{
+	position: absolute;
+    top: 15px;
+    left: 300px;
+	color: #5DADE2;
+	margin: 30px 100px 20px;
+
+}
+.wrapper .main .about {
+	background-color: rgba(227, 221, 221, 0.7);
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.wrapper .main .about h2{
+	background-size: 40px;
+	background-color: blue;
+	margin-left: 350px;
+	padding-top: 10px;
+}
+.wrapper .main .about p{
+	margin-left: 400px;
+}
+.wrapper .main .project {
+	background-color: rgba(227, 221, 221, 0.7);
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.wrapper .main .project h2{
+	background-size: 40px;
+	background-color: blue;
+	margin-left: 350px;
+	padding-top: 10px;
+}
+ }
+ img{
+ 	width: 100%;
+ 	height: 100%;
+ 	display: block;
+ }
+ .project_container{
+ 	margin: 40px 0;
+ 	width: 70%;
+ 	margin-left: 400px;
+ }
+ .project_container .cards_wrap{
+ 	display: flex;
+ 	flex-wrap: wrap;
+ }
+ .project_container .card_item{
+ 	width: 25%;
+ 	box-shadow: 0 0 10px 0 #000;
+ 	margin: 40px 10px;
+ }
+ .cards_wrap .card_inner{
+ 	background: #fff;
+
+ }
+ .cards_wrap .card_top{
+ 	width: 80%;
+ 	height: auto;
+ 	padding: 10px;
+ 	padding-bottom: 10px;
+ }
+ .cards_wrap .card_bottom{
+ 	padding: 15px;
+ }
+ .cards_wrap .card_bottom .card_category{
+ 	text-transform: uppercase;
+ 	text-align: center;
+ }
+ .cards_wrap .card_bottom .card_info{
+ 	padding: 15px;
+ 	margin: 10px 0px;
+ 	border: 1px dashed #0071bc;
+ }
+.cards_wrap .card_bottom .card_info .title{
+	color: #0071bc;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.cards_wrap .card_bottom .card_creator{
+	text-align: center;
+}
+@media(max-width: 1024px){
+	.project_container .card_item; .cards{
+ 	width: 50%;
+ }
+}
+@media(max-width: 768px){
+	.project_container .card_item; .cards{
+ 	width: 50%;
+ }
+}
+@media(max-width: 528px){
+	.project_container .card_item; .cards{
+ 	width: 100%;
+ }
+}        
+         /* End project */
+        /* starts Skills */
+.wrapper .main .skills {
+	background-color: rgba(227, 221, 221, 0.7);
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.wrapper .main .skills h2{
+	background-size: 40px;
+	background-color: blue;
+	margin-left: 350px;
+	padding-top: 10px;
+}
+.cards{
+    margin: 40px 0;
+    width: 70%;
+    margin-left: 450px;
+ }
+.cards .card_wrap{
+    width: 80%;
+    box-shadow: 0 0 10px 0 #000;
+    margin: 40px 10px;
+    background: #fff;
+ }
+
+ .cards .card_wrap .card_top p{
+    font-weight: 600px;
+    font-size: 70px;
+    text-align: center;
+ }
+ .cards_wrap .card_top{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 10px;
+ }
+div.item {
+    padding-top: 15px;
+    margin-left: 120px;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+img {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+.caption {
+    font-weight: 100px;
+    font-size: 20px;
+    display: block;
+}
+div.item3{
+    padding-top: 15px;
+    margin-left: 60px;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+   /* End skills */
+   /* Start Contact */
+.wrapper .main .contact {
+	background-color: rgba(227, 221, 221, 0.7);
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.wrapper .main .contact h2{
+	background-size: 40px;
+	background-color: blue;
+	margin-left: 350px;
+	padding-top: 10px;
+}
+.img{
+	margin-left: 400px;
+	padding-top: 100px;
+}
+.hire input[type="button"]{
+	background-color: blue;
+	color: #fff;
+	width: 80px;
+	margin-left: 450px;
+	border-radius: 15px;
+}
+
+.form-container{
+	width: 400px;
+	height: auto;
+	padding: 25px 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 #010;
+	margin-left: 750px;
+	margin-top: -180px;
+	resize: vertical;
+}
+ul.list h3{
+	width: 150px;
+}
+ul.list{
+	list-style-type: none;
+	text-align: center;	
+}
+ul.list li{
+
+	width: 300px;
+	margin-bottom: 10px;
+}
+ul.list li input{
+	padding: 7px 0px;
+	border-radius: 5px;
+}
+ul.list li input[name="message"]{
+	width: 300px;
+	height: 300px;
+}
+
+ul.list li input[type="button"]{
+	background-color: blue;
+	color: #fff;
+	width: 80px;	
+}
+    /* End contact */
