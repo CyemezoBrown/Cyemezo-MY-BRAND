@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+	font-weight: bold;
+}
+body{
+	background-color: rgba(73, 113, 59, 1);
+	padding-top: 30vh;
+}
+.form-container{
+	width: 300px;
+	height: auto;
+	padding: 25px 20px;
+	background-color: rgba(23, 98, 167, 1);
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 #000;
+	margin: auto;
+}
+
+ul.list{
+	list-style-type: none;
+	text-align: center;	
+}
+ul.list li{
+	width: 300px;
+	margin-bottom: 10px;
+}
+ul.list li input{
+	width: 300px;
+	text-align: center;
+	padding: 7px 0px;
+	border:none;
+	border-radius: 5px;
+}
+
+ul.list li input[type="button"]{
+	background-color: #000;
+	color: #fff;
+	width: 80px;	
+}
