@@ -129,10 +129,10 @@ header .menu-toggle{
    .auth-content form div{
    	margin-bottom: 10px;
    }
-   .auth-content form p{
+   .auth-content p{
    	text-align: center;
    }
-   .auth-content form p a{
+   .auth-content p a{
    	text-decoration: underline;
    }
   .btn{

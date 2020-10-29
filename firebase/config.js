@@ -1,15 +1,16 @@
 
-  // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyAaYVcyTRXgFCFGU0pqf3inAVVuPxJ2Vys",
-    authDomain: "personal-web-ee582.firebaseapp.com",
-    databaseURL: "https://personal-web-ee582.firebaseio.com",
-    projectId: "personal-web-ee582",
-    storageBucket: "personal-web-ee582.appspot.com",
-    messagingSenderId: "345578472247",
-    appId: "1:345578472247:web:6e039870e1931a40b790b2",
-    measurementId: "G-D3GNR14MH2"
+    apiKey: "AIzaSyCVf9mAy_0Tgbfpangq9HjPG0uqQiAX_xY",
+    authDomain: "landing-page-44bc0.firebaseapp.com",
+    databaseURL: "https://landing-page-44bc0.firebaseio.com",
+    projectId: "landing-page-44bc0",
+    storageBucket: "landing-page-44bc0.appspot.com",
+    messagingSenderId: "144626464470",
+    appId: "1:144626464470:web:c518f3f8d5942e28dc3b77",
+    measurementId: "G-1W2PKCP0EE"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-
+  const db = firebase.firestore();
+  const ref = firebase.storage().ref();
+  const auth = firebase.auth();

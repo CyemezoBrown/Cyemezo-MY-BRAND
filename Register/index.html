@@ -7,6 +7,7 @@
 	<script src="https://kit.fontawesome.com/ce20a13c2e.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
 
 	<title>Register</title>
 </head>
@@ -32,32 +33,25 @@
 		</ul>		
 	</header>
 	<div class="auth-content">
-		<form action="index.html" method="post">
+		<form action="index.html" method="post" id="register-form">
 			<h2 class="form-title">Register</h2>
+			<div>
+				<label for="register-email">Email</label>
+				<input type="text" name="email" class="text-input" id="register-email">
+			</div>
+			<div>
+				<label for="userPassword">Password: </label>
+                <input id="userPassword" type="password">
+			</div>
 
-			<div>
-				<label>Username</label>
-				<input type="text" name="username" class="text-input">
-			</div>
-			<div>
-				<label>Email</label>
-				<input type="text" name="email" class="text-input">
-			</div>
-			<div>
-				<label>Password</label>
-				<input type="password" name="password" class="text-input">
-			</div>
-			<div>
-				<label>Password Confirmation</label>
-				<input type="password" name="passwordconf" class="text-input">
-			</div>
 			<div>
 				<button type="submit" name="register-btn" class="btn btn-big">Register</button>
 			</div>
-			<p>Or <a href="../login/login.html">Sign In</a></p>
 		</form>
+		<p>Or <a href="../login/login.html">Sign In</a></p>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+  
+	<script src="auth.js"></script>
 	<script src="scripts.js"></script>
 </body>
 </html>

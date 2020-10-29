@@ -6,7 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/ce20a13c2e.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="admin.css">
-	<link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+
+
 
 	<title>Admin Section - Manage Posts</title>
 </head>
@@ -36,9 +39,13 @@
 		<!-- Left sidebar -->
 		<div class="left-sidebar">
 			<ul>
-			    <li><a href="posts/index.html">Manage Posts</a></li>
-			    <li><a href="users/index.html">Manage Users</a></li>
-				<li><a href="topic/index.html">Manage Topics</a></li>
+			    <li><a href="posts/create.html">Manage Posts</a></li>
+			    <li><a href="users/create.html">Manage Users</a></li>
+				<li><a href="topic/create.html">Manage Topics</a></li>
+				<li><a href="about/index.html">About</a></li>
+				<li><a href="skills/index.html">Skills</a></li>
+				<li><a href="project/index.html">Project</a></li>
+				<li><a href="contact/index.html">Contact</a></li>
 		    </ul>
 		</div>
 		<!-- // Left sidebar -->
@@ -52,81 +59,45 @@
 			</div>
 		    <div class="content">
 				<h2 class="page-title">Manage Posts</h2>
-				
-			    <table>
-				    <thead>
-					    <th>SN</th>
-					    <th>Title</th>
-					    <th>Author</th>
-						<th colspan="3">Action</th>
-						<tr>
-							<th><input type="text" name="number" placeholder="SN"></th>
-							<th><input type="text" name="post" placeholder="Title"></th>
-							<th><input type="text" name="name" placeholder="Name"></th>
-							<th><a href="#" class="edit">Edit</a></th>
-							<th><a href="#" class="delete">Delete</a></th>
-							<th><a href="#" class="publish">Publish</a></th>
-							<th><button>Add </button></th>
-						</tr>
+                <form id="add-blog-form">
+                    <input type="text" name="title" placeholder="title">
+                    <input type="text" name="name" placeholder="name">
+                    <button>Add Post</button>
+                </form>  
 
-				    </thead>
-				    <tbody>
-					    <tr>
-					    	<td>1</td>
-					    	<td>First post</td>
-					    	<td>Brown</td>
-					    	<td><a href="#" class="edit">Edit</a></td>
-					    	<td><a href="#" class="delete">Delete</a></td>
-					    	<td><a href="#" class="publish">Publish</a></td>
-					    </tr>
-					    <tr>
-					    	<td>2</td>
-					    	<td>Second post</td>
-					    	<td>Brown</td>
-					    	<td><a href="#" class="edit">Edit</a></td>
-					    	<td><a href="#" class="delete">Delete</a></td>
-					    	<td><a href="#" class="publish">Publish</a></td>
-					    </tr>
-					    <tr>
-					    	<td>3</td>
-					    	<td>Third post</td>
-					    	<td>Brown</td>
-					    	<td><a href="#" class="edit">Edit</a></td>
-					    	<td><a href="#" class="delete">Delete</a></td>
-					    	<td><a href="#" class="publish">Publish</a></td>
-					    </tr>
-				    </tbody>
-			    </table>
-		    </div>
+                <ul id="blog-list"></ul>
+            </div>
 		</div>
 		<!-- // Admin content -->
 	</div>
 	<!-- Jquery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-	
-	<script src="../JS/scripts.js"></script>
 
-
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
 
 <script>
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
-    apiKey: "AIzaSyDFo9tV8WWNFhk_FOzrUzlbOK0UWKdsgIg",
-    authDomain: "admin-dash-437a1.firebaseapp.com",
-    databaseURL: "https://admin-dash-437a1.firebaseio.com",
-    projectId: "admin-dash-437a1",
-    storageBucket: "admin-dash-437a1.appspot.com",
-    messagingSenderId: "927594795863",
-    appId: "1:927594795863:web:5d52ec85f22cce1ca4e412",
-    measurementId: "G-0CPRQ2TLYR"
+    apiKey: "AIzaSyD2pewAmloYHgNwNoy0NNdhZ_dPC9zl3t8",
+    authDomain: "dashboard-7c72e.firebaseapp.com",
+    databaseURL: "https://dashboard-7c72e.firebaseio.com",
+    projectId: "dashboard-7c72e",
+    storageBucket: "dashboard-7c72e.appspot.com",
+    messagingSenderId: "764517369555",
+    appId: "1:764517369555:web:29310318dda961c4657626",
+    measurementId: "G-CXV6RL9FTL"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  //db.settings({ timestampsInSnapshots: true}); 
+
   
 </script>
+<script src="firebase/dash.js"></script>
+<script src="../JS/scripts.js"></script>
+
+
 </body>
 </html>

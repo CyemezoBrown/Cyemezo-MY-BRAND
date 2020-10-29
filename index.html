@@ -7,7 +7,8 @@
 	<script src="https://kit.fontawesome.com/ce20a13c2e.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="Landing-page/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
-	<title>title</title>
+	
+	<title>Personal Portfolio</title>
 </head>
 <body>
 	<div class="wrapper">
@@ -116,13 +117,12 @@
 			    <div class="about-content">
 			    	<h2 style="font-size:40px; color: white">ABOUT</h2><br><br>
 			        <p style="font-size:20px" >I am a full stack developer where I am learning  and developing my passion of become an expert programmer.<br><br>
-				    As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my  mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at a high growth company.<br><br>
-                    I am a quick learn in whatever am learning back in days I was dealing with Mathematics and Phyiscs.<br><br>
-                    CodePen and frontend development have become synonymous with each other. As an early user and early hire at CodePen, I had the benefit of learning and growing with the platform as it went from online editor and web playground to a lively community for testing and showcasing HTML, CSS and JavaScript code snippets – which is only set to expand with the addition of CodePen Projects.<br>
-
-                    CodePen is like a Swiss Army knife for frontend developers, offering inspiration, a clean environment to experiment in and more. Everyone has a different approach to development, and there are a few key CodePen features that sometimes go unnoticed and could use a shout out.<br><br>
-                    Current focus: <b>Portfolio</b>
-                    </p>
+						As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my  mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at a high growth company.<br><br>
+						I am a quick learn in whatever am learning back in days I was dealing with Mathematics and Phyiscs.<br><br>
+						CodePen and frontend development have become synonymous with each other. As an early user and early hire at CodePen, I had the benefit of learning and growing with the platform as it went from online editor and web playground to a lively community for testing and showcasing HTML, CSS and JavaScript code snippets – which is only set to expand with the addition of CodePen Projects.<br>
+	
+						CodePen is like a Swiss Army knife for frontend developers, offering inspiration, a clean environment to experiment in and more. Everyone has a different approach to development, and there are a few key CodePen features that sometimes go unnoticed and could use a shout out.<br><br>
+						Current focus: <b>Portfolio</b></p>
 			    </div>
 		    </section> 
 		    <!-- End About section -->
@@ -257,6 +257,7 @@
 
 		     <!-- Start Skills section -->
 		    <section id="skills">
+			<form id="skills">
 			    <div class="skills-content">
 			    	<h2 style="font-size:40px; color: white">SKILLS</h2><br><br>
 			    <div class="cards">
@@ -317,7 +318,8 @@
                         </div>
                     </div>
                 </div>
-			    </div>
+				</div>
+			</form>
       		</section>
 		     <!-- End Skills section -->
 
@@ -333,7 +335,7 @@
 							<input class="name" type="text" placeholder="name"><br>
 							<label for="">Email</label> <br>
 							<input class="email" type="text" placeholder="email"><br>
-							<label for="">Message</label> <br>
+							<label for="" class="message">Message</label> <br>
 							<textarea
 								class="message"
 								name=""
@@ -364,15 +366,17 @@
 		<!-- end of Main content-->
 
 	</div>
+	<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+	<script src="firebase/config.js"></script>
+	<script src="firebase/contact.js"></script>
 
-	
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase.js"></script>
-	<script src="firebase/contactform.js"></script>
-	<script src="Landing-page/sripts.js"></script>
+	<script src="Landing-page/scripts.js"></script>
+	
 
 
 </body>

@@ -33,12 +33,12 @@
 		</ul>		
 	</header>
 	<div class="auth-content">
-		<form action="login.html" method="post">
+		<form action="login.html" method="post" id="login-form">
 			<h2 class="form-title">Login In</h2>
 
 			<div>
-				<label>Username</label>
-				<input type="text" name="username" class="text-input">
+				<label>Email</label>
+				<input type="text" name="email" class="text-input">
 			</div>
 			<div>
 				<label>Password</label>
@@ -47,10 +47,18 @@
 			<div>
 				<button type="submit" name="login-btn" class="btn btn-big">Login</button>
 			</div>
-			<p>Or <a href="../Register/index.html">Register</a></p>
+		<!--	<p>Or <a href="../Register/index.html">Register</a></p> -->
 		</form>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+	
+
+	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+	<script src="auth.js"></script>
 	<script src="scripts.js"></script>
+
 </body>
 </html>

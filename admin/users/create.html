@@ -37,57 +37,53 @@
 		<!-- Left sidebar -->
 		<div class="left-sidebar">
 			<ul>
-			    <li><a href="../posts/index.html">Manage Posts</a></li>
-			    <li><a href="index.html">Manage Users</a></li>
-			    <li><a href="../topic/index.html">Manage Topics</a></li>
-		    </ul>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/posts/create.html">Manage Posts</a></li>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/users/create.html">Manage Users</a></li>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/topic/create.html">Manage Topics</a></li>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/about/index.html">About</a></li>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/skills/index.html">Skills</a></li>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/project/index.html">Project</a></li>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/contact/index.html">Contact</a></li>
+			</ul>
 		</div>
 		<!-- // Left sidebar -->
 
 
 		<!-- Admin content-->
 		<div class="admin-content">
-			<div class="button-group">
-				<a href="create.html" class="btn btn-big">Add Users</a>
-				<a href="index.html" class="btn btn-big">Manage Users</a>
-			</div>
 		    <div class="content">
 			    <h2 class="page-title">Add User</h2>
 			    <form action="create.html" method="post">
-			    	<div>
-				        <label>Username</label>
-				        <input type="text" name="username" class="text-input">
-			        </div>
-			        <div>
-				        <label>Email</label>
-				        <input type="text" name="email" class="text-input">
-			        </div>
-			        <div>
-        				<label>Password</label>
-		        		<input type="password" name="password" class="text-input">
-         			</div>
-         			<div>
- 		        		<label>Password Confirmation</label>
-        				<input type="password" name="passwordconf" class="text-input">
-        			</div>
-        			<div>
-        				<label>Role</label>
-			    		<select name="role">
-			    			<option value="admin">Admin</option>
-			    			<option value="author">Author</option>
-			    			<option value="writer">Writer</option>
-			    			<option value="user">User</option>
-			    		</select>
-			    	</div>
-			    	<div>
-			    		<button type="submit" class="btn btn-big">Add User</button>
-			    	</div>
-			    </form>
+						<div class="container">
+							<label class="label-container" for="uname"><b>Username</b></label>
+							<input type="text" placeholder="Enter Username" name="uname" required>
+							<label class="label-container" for="psw"><b>Password</b></label>
+							<input type="password" placeholder="Enter Password" name="psw" required>
+						</div>
+				</form>
+
 		    </div>
 		</div>
 		<!-- // Admin content -->
 	</div>
-	<!-- Jquery -->
+<!-- JQuery-->
+<!-- <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyApcojOMxPvj_jVyB7nOwvC7ofWfsEgc5U",
+    authDomain: "admin-project-c9f19.firebaseapp.com",
+    databaseURL: "https://admin-project-c9f19.firebaseio.com",
+    projectId: "admin-project-c9f19",
+    storageBucket: "admin-project-c9f19.appspot.com",
+    messagingSenderId: "271197297974",
+    appId: "1:271197297974:web:7229f029f9fe8f950d6797",
+    measurementId: "G-RY53Y37K1R"
+  };
+</script> -->
+<script src="../firebase/admin.js"></script>
 	
 	<script src="https://cdn.ckeditor.com/ckeditor5/21.0.0/classic/ckeditor.js"></script>
 	<script src="../JS/scripts.js"></script>

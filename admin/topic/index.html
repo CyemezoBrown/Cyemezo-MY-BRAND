@@ -7,6 +7,9 @@
 	<script src="https://kit.fontawesome.com/ce20a13c2e.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+	<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+
 
 	<title>Admin Section - Manage Topics</title>
 </head>
@@ -36,10 +39,14 @@
 		<!-- Left sidebar -->
 		<div class="left-sidebar">
 			<ul>
-			    <li><a href="../posts/index.html">Manage Posts</a></li>
-			    <li><a href="../users/index.html">Manage Users</a></li>
-			    <li><a href="index.html">Manage Topics</a></li>
-		    </ul>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/posts/index.html">Manage Posts</a></li>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/users/index.html">Manage Users</a></li>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/topic/index.html">Manage Topics</a></li>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/about/index.html">About</a></li>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/skills/index.html">Skills</a></li>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/project/index.html">Project</a></li>
+				<li><a href="/home/saint/Desktop/Portfolio/admin/contact/index.html">Contact</a></li>
+			</ul>
 		</div>
 		<!-- // Left sidebar -->
 
@@ -51,51 +58,21 @@
 				<a href="index.html" class="btn btn-big">Manage Topic</a>
 			</div>
 		    <div class="content">
-			    <h2 class="page-title">Manage Topics</h2>
-			    <table>
-				    <thead>
-					    <th>SN</th>
-					    <th>Title</th>
-						<th colspan="2">Action</th>
-						<tr>
-							<th><input type="text" name="number" placeholder="SN"></th>
-							<th><input type="text" name="post" placeholder="Title"></th>
-							<th><a href="#" class="edit">Edit</a></th>
-							<th><a href="#" class="delete">Delete</a></th>
-							<th><button>Add </button></th>
-						</tr>
-				    </thead>
-				    <tbody>
-					    <tr>
-					    	<td>1</td>
-					    	<td>Fiction</td>
-					    	<td><a href="#" class="edit">Edit</a></td>
-					    	<td><a href="#" class="delete">Delete</a></td>
-					    	
-					    </tr>
-					    <tr>
-					    	<td>2</td>
-					    	<td>Programming</td>
-					    	<td><a href="#" class="edit">Edit</a></td>
-					    	<td><a href="#" class="delete">Delete</a></td>
-					    	
-					    </tr>
-					    <tr>
-					    	<td>3</td>
-					    	
-					    	<td>Footbal</td>
-					    	<td><a href="#" class="edit">Edit</a></td>
-					    	<td><a href="#" class="delete">Delete</a></td>
-					    	
-					    </tr>
-				    </tbody>
-			    </table>
+				<h2 class="page-title">Manage Topics</h2>
+				<form id="add-blog-form">
+					<input type="text" name="title" placeholder="title">
+					<input type="text" name="name" placeholder="name">
+					<button>Add Post</button>
+				</form>  
+			    <ul id="blog-list"></ul>
 		    </div>
 		</div>
 		<!-- // Admin content -->
 	</div>
 	<!-- Jquery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-	<script src="../JS/scripts.js"></script>
+	 <script src="../JS/scripts.js"></script>
+
+
 </body>
 </html>
